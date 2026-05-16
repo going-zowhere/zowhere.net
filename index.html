@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>going zowhere</title>
+</head>
+
+<body>
+    <!--headerbar--------------------------------------->
+    <header>
+        <h1>going zowhere</h1>
+        <i>ur friendly neighborhood computer angel</i>
+    </header>
+
+    <!--navbar--------------------------------------->
+    <nav>
+        <button class="navbtn" onclick="switchContent('home')">home</button>
+        <button class="navbtn" onclick="switchContent('about')">about</button>
+        <button class="navbtn" onclick="switchContent('links')">links</button>
+        <button class="navbtn" onclick="switchContent('faqs')">faqs</button>
+        <button class="navbtn right" onclick="alert('need </head>')">...</button>
+    </nav>
+
+    <!--controls--------------------------------------->
+    <button class="ctrlbtn" onclick="invertColors()">light/dark</button>
+
+    <!--maincontent--------------------------------------->
+    <main id="maincontent">
+        <noscript>
+            <p>it would appear your browser doesn't support scripts</p>
+            <p>or perhaps you have them turned off on purpose?</p>
+            <p>hopefully i will have an alternative in the future</p>
+            <p>for now, however, this won't work without js enabled</p>
+            <p>for those with security concerns, i totally understand</p>
+            <p>all javascript used in this site is embedded in this html document</p>
+            <p>this site makes no external requests, and stores no cookies</p>
+        </noscript>
+    </main>
+
+    <!--footerarea--------------------------------------->
+    <section id="blinkies">
+        <img width="88" height="31" src="https://seirdy.one/sticker_88x31.gif"
+            alt="Square icon of a colon and semicolon, next to the word “Seirdy”." />
+        <img width="88" height="31" src="assets/bookmarkthispage.gif" alt="The text " Bookmark this page!" next to an
+            icon of a book." />
+        <img width="88" height="31" src="assets/cssdif.gif" alt="The text " CSS is difficult" spilling slightly outside
+            of a red box." />
+        <img width="88" height="31" src="assets/darkmode.png" alt="The text " made for dark mode" over a starry purple
+            background with a crescent moon." />
+        <img width="88" height="31" src="assets/graphicdesign.png" />
+        <img width="88" height="31" src="assets/mobilefriendly.png" />
+        <img width="88" height="31" src="assets/transrights.png" />
+    </section>
+    <footer>
+        &hearts; by zoe, with love &hearts;
+    </footer>
+</body>
+
+<!--templates--------------------------------------->
+<template id="home">
+    <h2>home</h2>
+    <section>
+        <h3>hi there</h3>
+        <p>you seem to have found my website</p>
+        <p>pretty cool, huh? i sure think so</p>
+        <p>eventually there might be more stuff</p>
+    </section>
+    <section>
+        <h3>wha huh</h3>
+        <p>click some of those things up there</p>
+        <p>get in touch if you want to :)</p>
+        <p>or don't idk im not your mom</p>
+    </section>
+</template>
+<template id="about">
+    <h2>about</h2>
+    <section>
+        <h3>the author</h3>
+        <p>hi :) im zoe</p>
+        <p>i love computers and the internet and lots of other things</p>
+        <aside class="right">
+            <ul>
+                <h4>other things:</h4>
+                <li>buffy</li>
+                <li>mass effect</li>
+                <li>the locked tomb</li>
+                <li>3d printers</li>
+                <li>pens</li>
+                <li>writing</li>
+                <li>'romance' novels</li>
+                <li>keyboardt</li>
+                <li><i>that</i> poppy</li>
+            </ul>
+        </aside>
+        <p>this is my lil home on the world wide web</p>
+        <p>i've been doing stuff like this my whole life</p>
+        <h4>some fun facts about me:</h4>
+        <p>when i was 5 i got a book on html and im still trash at it</p>
+        <p>i use nixos on my personal laptop because im silly</p>
+        <p>that list of things i like pretty much explains things</p>
+        <p></p>
+    </section>
+    <section>
+        <h3>this site</h3>
+        <p>this is just a static html site with a lil bit of css</p>
+        <p>plus a dash of javascript, and of course <span class="angel">angel.png</span></p>
+        <p>all of which was written / created by yours truly :)</p>
+        <p>no frameworks, generators, content management systems, etc.</p>
+        <p>mobile-friendly, compatible with a wide range of browsers</p>
+        <p>and should be compliant with modern web accessibility standards?</p>
+        <p>renders fine in as little as 167x258 pixels! pretty cool</p>
+    </section>
+</template>
+<template id="links">
+    <h2>links</h2>
+    <section>
+        <h3>other stuff by me</h3>
+        <p>i do some <a href="http://https://www.printables.com/@zowhere_3748792">3d printing</a> stuff</p>
+        <p>recently i started a <a href="https://going-zowhere.tumblr.com/">tumblr blog</a></p>
+
+    </section>
+    <section>
+        <h3>web development</h3>
+        <p>check out <a href="https://neocities.org">neocities</a> if you think this is cool</p>
+        <p>the source code for this site is on <a href="https://github.com/going-zowhere">github</a></p>
+        <p>and of course <a href="https://www.w3schools.com">w3schools</a> for any web programming reference</p>
+    </section>
+    <section>
+        <h3>credits/inspo</h3>
+        <p>the wonderful <a href="https://insect.christmas">insect.christmas</a> is a perpetual inspiration</p>
+        <p>those badges down there are mostly from <a href="https://seirdy.one/meta/badges/">seirdy.one</a>'s neat collection</p>
+    </section>
+</template>
+<template id="faqs">
+    <h2>faqs</h2>
+    <section>
+        <h3>who are you?</h3>
+        <p>zoe &hearts;</p>
+        <p>that's what my <button class="navbtn" onclick="switchContent('about')">about</button> page is for tho</p>
+        <p>i love talking to new people, so feel free to get in touch if you have more questions</p>
+    </section>
+    <section>
+        <h3>why did you make this?</h3>
+        <p>mostly because i want to</p>
+        <p>but also because ive always been enamored with this kind of like</p>
+        <p>angelfire / geocities type website ever since i was a little kid</p>
+    </section>
+    <section>
+        <h3>how did u make this?</h3>
+        <p>
+            just sort of fucked around in a code editor with
+            <a href="https://www.w3schools.com/html/default.asp">w3schools</a> open
+        </p>
+        <p>but also ive done this kind of thing before a bunch of times over the years</p>
+        <p>ive loved the idea of starting a blog since i was a little kid but never stuck with it</p>
+        <p>and i just decided i would start from scratch with a loose html file and see what happened</p>
+    </section>
+    <section>
+        <h3>can i make this?</h3>
+        <p>of course!!</p>
+        <p>i recommend anyone start with <a href="https://neocities.org">neocities</a> its free and very cool</p>
+        <p>you do not need ur own website or any experience to get started doing this!</p>
+        <p>they have plenty of resources and a tutorial to get you started</p>
+        <p>neocities itself is a community and makes it easy to discover other people with personal sites</p>
+        <p>but there also appear to be communities on tumblr and other social media around this</p>
+        <p>or check my <button class="navbtn" onclick="switchContent('links')">links</button> page for more</p>
+    </section>
+</template>
+
+<template id="angel">
+    <pre>
+  _
+(\o/)
+ /_\
+    </pre>
+</template>
+
+<!--functions--------------------------------------->
+<script>
+    var curView = document.getElementById("maincontent");
+    var lightMode = false;
+    var docStyle = document.querySelector(':root');
+
+    function switchContent(viewName) {
+        curView.innerHTML = document.getElementById(viewName).innerHTML;
+        document.title = "going zowhere - " + viewName;
+    }
+
+    function invertColors() {
+        if (lightMode) {
+            docStyle.style.setProperty('--bg-color', '#1a1a1a');
+            docStyle.style.setProperty('--fg-color', '#ffffff');
+            lightMode = false;
+        } else {
+            docStyle.style.setProperty('--bg-color', '#ffffff');
+            docStyle.style.setProperty('--fg-color', '#1a1a1a');
+            lightMode = true;
+        }
+    }
+</script>
+
+<!--scripts--------------------------------------->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        switchContent("home");
+    });
+</script>
+
+</html>

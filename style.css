@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #1a1a1a;
+    --fg-color: #ffffff;
+    --ac-color: deeppink;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
+@keyframes halo {
+
+    0%,
+    100% {
+        top: -10px;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    50% {
+        top: 5px;
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.angel {
+    position: relative;
+    color: var(--ac-color);
+    animation: halo 3s ease-in-out infinite;
+}
+
+/* header {} */
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+    margin-top: 2%;
+}
+
+.navbtn, a {
+    margin: 0% 2%;
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+}
+
+.navbtn:hover {
+    scale: 120%;
+}
+
+a:hover {
+    scale: 120%;
+}
+
+.ctrlbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Float smthn to the right */
+/* for controls dropdown maybe */
+.right {
+    float: right;
+}
+
+section {
+    z-index: -1;
+    border-color: var(--ac-color);
+    border-style: dotted;
+    padding: 0% 2%;
+    margin: 2% 0%;
+}
+
+/* FIXME - contrast */
+aside {
+    border-color: var(--ac-color);
+    border-style: solid;
+    background-color: var(--bg-color);
+    padding-right: 2%;
+}
+
+#blinkies {
+    padding: 2%;
+    margin-bottom: 20px;
+}
+
+#blinkies > img {
+    image-rendering: pixelated;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    bottom: 0;
+    text-align: center;
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+}
