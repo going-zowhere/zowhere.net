@@ -1,7 +1,7 @@
 :root {
     --bg-color: #1a1a1a;
     --fg-color: #ffffff;
-    --ac-color: deeppink;
+    --ac-color: violet;
 }
 
 body {
@@ -54,12 +54,14 @@ nav {
     color: var(--bg-color);
 }
 
-.navbtn:hover {
+.navbtn:hover, a:hover {
     scale: 120%;
+    color: var(--ac-color);
 }
 
-a:hover {
-    scale: 120%;
+a {
+    text-decoration: underline;
+    text-decoration-color: var(--ac-color);
 }
 
 .ctrlbtn {

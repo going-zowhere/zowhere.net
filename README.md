@@ -12,9 +12,11 @@ everything in the `assets` folder is made by other people
 
 ## todo dot text
 
-- animate links on hover
-- make proper color scheme??
-- fix link styling for contrast
+- DOING animate links on hover
+    - maybe not gonna do this?
+- DOING make proper color scheme??
+    - at least improved the contrast
+- DONE fix link styling for contrast
 - DONE finish alt text for badges
 - generally verify accessibility
 - more badges !! mooooore badges !!
