@@ -13,6 +13,26 @@ body {
     height: 100%;
 }
 
+h1::before {
+    content: "~";
+}
+
+h2::before {
+    content: "/";
+}
+
+h3::before {
+    content: "# ";
+}
+
+h4::before {
+    content: "+ ";
+}
+
+p::before {
+    content: "> ";
+}
+
 /* from https://www.w3schools.com/howto/howto_css_glowing_text.asp */
 @keyframes halo {
 
@@ -34,8 +54,6 @@ body {
     animation: halo 3s ease-in-out infinite;
 }
 
-/* header {} */
-
 nav {
     position: sticky;
     top: 0;
@@ -44,7 +62,8 @@ nav {
     margin-top: 2%;
 }
 
-.navbtn, a {
+.navbtn,
+a {
     margin: 0% 2%;
     font-size: 100%;
     font-family: inherit;
@@ -54,9 +73,14 @@ nav {
     color: var(--bg-color);
 }
 
-.navbtn:hover, a:hover {
+.navbtn:hover,
+a:hover {
     scale: 120%;
     color: var(--ac-color);
+}
+
+.navbtn::before {
+    content: "/";
 }
 
 a {
@@ -89,7 +113,12 @@ aside {
     border-color: var(--ac-color);
     border-style: solid;
     background-color: var(--bg-color);
-    padding-right: 2%;
+    padding: 0% 2%;
+}
+
+ul {
+    padding-left: 1em;
+    list-style: circle;
 }
 
 #blinkies {
@@ -97,7 +126,7 @@ aside {
     margin-bottom: 20px;
 }
 
-#blinkies > img {
+#blinkies>img {
     image-rendering: pixelated;
 }
 

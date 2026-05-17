@@ -20,6 +20,7 @@ everything in the `assets` folder is made by other people
 - DONE finish alt text for badges
 - generally verify accessibility
 - more badges !! mooooore badges !!
-- improve heading css
+- DOING improve heading css
+    - idk it's sorta better?
 - make borders a little better
 - split out javascript and sub-pages
