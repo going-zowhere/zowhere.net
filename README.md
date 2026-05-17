@@ -15,7 +15,7 @@ everything in the `assets` folder is made by other people
 - animate links on hover
 - make proper color scheme??
 - fix link styling for contrast
-- finish alt text for badges
+- DONE finish alt text for badges
 - generally verify accessibility
 - more badges !! mooooore badges !!
 - improve heading css
