@@ -12,7 +12,7 @@ everything in the `assets` folder is made by other people
 
 ## todo dot text
 
-- DOING animate links on hover
+- CANCEL animate links on hover
     - maybe not gonna do this?
 - DOING make proper color scheme??
     - at least improved the contrast
@@ -24,3 +24,5 @@ everything in the `assets` folder is made by other people
     - idk it's sorta better?
 - make borders a little better
 - split out javascript and sub-pages
+- DONE add opengraph support??
+- also webmentions, maybe??
